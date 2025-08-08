@@ -33,7 +33,5 @@ function checkStatus(student) {
     } else {
         return "Fail"
     }
-
-    
 }
 
