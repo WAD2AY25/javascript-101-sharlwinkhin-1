@@ -17,12 +17,22 @@ const students = [
 function computeAverageScore(students) {
     let result = 0
     // add your code here
+    for (let student of students) {
+        result += student.score
+    }
+
+    result = result / len(students)
 
     return result
 }
 
 function checkStatus(student) {
     // add your code here
+    if (student.score >= 50) {
+        return "Pass"
+    } else {
+        return "Fail"
+    }
 
     
 }
