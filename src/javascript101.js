@@ -21,7 +21,7 @@ function computeAverageScore(students) {
         result += student.score
     }
 
-    result = result / len(students)
+    result = result / students.length
 
     return result
 }
@@ -34,4 +34,6 @@ function checkStatus(student) {
         return "Fail"
     }
 }
+
+module.exports = { computeAverageScore, checkStatus }
 

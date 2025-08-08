@@ -1,4 +1,4 @@
-const computeAverageScore = require('../src/javascript101')
+const { computeAverageScore, checkStatus } = require('../src/javascript101')
 
 const students = [
             { name: "Alice", score: 85 },
@@ -8,10 +8,10 @@ const students = [
 
 // this test checks if computeAverageScore() correctly compute the average scores of a given students list
 test('computeAverageScore', () => {
-    expect(computeAverageScore(students).toBe(65))
+    expect(computeAverageScore(students)).toBe(65)
 })
 
 // this test checks if checkStatus() correctly return the Pass/Fail status of a given student
 test('checkStatus', () => {
-    expect(checkStatus(students[2]).toBe('Fail'))
+    expect(checkStatus(students[2])).toBe('Fail')
 })
